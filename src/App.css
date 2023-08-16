@@ -1,0 +1,135 @@
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(145, 100%, 75%);
+  overflow-y: hidden;
+  overflow-x: hidden;
+ 
+}
+  .video-container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height:0%;
+    
+    
+    /* 16:9 aspect ratio */
+  }
+  
+  video {
+    position: relative;
+       width: 0px;
+       height: 0px;
+    }
+  
+  .hand-image {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    
+    
+    
+    
+  }
+  
+  
+  .button {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: 50%;
+  
+   
+  }
+  
+  .button-green {
+    background-color: rgb(216, 225, 216);
+    color: white;
+   
+  }
+  
+  .button-yellow {
+    background-color: yellow;
+    color: black;
+   
+  }
+
+  .button-blue{
+    background-color: blue;
+    color: black;
+  }
+  
+  .hand-closed .button {
+    cursor: not-allowed;
+    opacity: 0.9;}
+
+    .button-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+      height: 100%;
+      width: 80%; 
+      
+    }
+    
+    .button-row {
+      position: absolute;
+      display: flex;
+      justify-content:space-between;
+     /* background-color: #c57fff;*/
+      gap:40px;
+      left: 0;
+      top: 0;
+    
+    
+  
+    }
+
+    .button-row2{
+      position: absolute;
+      display: flex;
+      justify-content:space-between;
+      left: 0;
+      top: 300px;
+      gap:60px;
+    
+    }
+    
+    /* En tu archivo App.css o en un archivo de estilos por separado */
+
+/* Estilos generales para las imágenes dentro de los botones */
+.button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Ejemplo de ajuste de imagen dentro de los botones */
+.button-image {
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantén la proporción de aspecto */
+  margin: auto; /* Centrar la imagen horizontalmente */
+  display: block; /* Asegurarse de que la imagen esté centrada */
+}
+
+/* Otros estilos de imagen si es necesario */
+.slider-container{
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.slider-container{
+  display: flex;
+  flex-direction: column;
+}
