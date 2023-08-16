@@ -217,7 +217,7 @@ function App() {
       />
       
       <div className="slider-container">
-        <label>Control de Velocidad</label>
+        <label>Velocidad</label>
         <input
           type="range"
           min="0.1"
